@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fbc3c1, #b0e4cc);
+}
+
+.container,
+.contenu {
+    width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title,
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #F13E93;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #c2607a;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.profile-img,
+.img-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 15px 0;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #ffffffcc;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h2,
+.card h3,
+.card h4,
+.social h5 {
+    font-family: 'Pacifico', cursive;
+    color: #F075AE;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.card p,
+.card li {
+    font-size: 16px;
+    color: #a05070;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: #2c7a7b;
+    font-weight: bold;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social i {
+    font-size: 28px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.fa-instagram {
+    background: #e1306c;
+    color: white;
+}
+
+.fa-facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.social i:hover {
+    transform: scale(1.2);
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#menuhaut,
+#menubas,
+#nombre,
+#page {
+    flex: 1 1 calc(50% - 15px);
+    min-height: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 48px;
+}
+
+#menuhaut {
+    background-color: #C08552;
+    color: white;
+}
+
+#menubas {
+    background-color: #FFB2B2;
+    color: #744577;
+}
+
+#nombre {
+    background-color: #FD7979;
+    color: #2B052E;
+}
+
+#page {
+    background-color: #FFB2B2;
+    color: #B76E79;
+}
+
+0#menuhaut p,
+#menubas p,
+#nombre p,
+#page p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container,
+    .contenu {
+        width: 90%;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #menuhaut,
+    #menubas,
+    #nombre,
+    #page {
+        flex: 1 1 100%;
+    }
+}
